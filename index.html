@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/5eee262d17.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="contain">
+      <form id="validate">
+        <div class="form-group">
+          <label for="">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            autocomplete="off"
+            aria-describedby="helpId"
+          />
+          <div class="form-group">
+            <label for="">Password</label>
+
+            <input
+              type="password"
+              class="form-control input-md"
+              name="password"
+              id="password"
+              placeholder="Enter your password"
+              autocomplete="off"
+            >
+            <span class="show-pass" onclick="toggle()"
+              ><i class="far fa-eye" onclick="myfunction(this)"></i>
+            </span>
+            <div class="progress">
+              <div
+                id="password-strength"
+                class="progress-bar "
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="40"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <ul class="list-unstyled">
+              <li class="">
+                <span class="low-upper-case"
+                  ><i class="fas fa-circle" aria-hidden="true"></i
+                  >&nbsp;Lowercase &amp; Uppercase</span
+                >
+              </li>
+              <li class="">
+                <span class="one-number"
+                  ><i class="fas fa-circle" aria-hidden="true"></i>&nbsp; Number
+                  [0-9]</span
+                >
+              </li>
+              <li class="">
+                <span class="special-char"
+                  ><i class="fas fa-circle" aria-hidden="true"></i>&nbsp;
+                  special-char [@,#,*,&]</span
+                >
+              </li>
+              <li class="">
+                <span class="eight-min"
+                  ><i class="fas fa-circle" aria-hidden="true"></i>&nbsp;Atleast
+                  8 char</span
+                >
+              </li>
+            </ul>
+            <a name="" id="" class="btn btn-primary" href="#" role="button"
+              >CREATE ACCOUN</a
+            >
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

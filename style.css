@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 212, 212) !important;
+}
+input {
+  color: #022255 !important;
+}
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  box-shadow: 0 0 5px rgba(246, 8, 110, 0.8);
+  border: 1px solid rgba(246, 8, 110, 0.8);
+}
+.contain {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  width: 320px;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+#password {
+  position: relative;
+}
+.show-pass {
+  position: absolute;
+  top: 43%;
+  right: 41%;
+}
+label {
+  text-align: left !important;
+  padding-bottom: 4px;
+}
+.progress {
+  margin-top: 10px;
+  height: 3px !important;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+.progress-bar-danger {
+  background-color: #e90f10 !important;
+}
+.progress-bar-warning {
+  background-color: #ffad00 !important;
+}
+.progress-bar-success {
+  background-color: #02b502 !important;
+}
+.fa-circle {
+  font-size: 5px;
+}
+.fa-eye {
+  cursor: pointer;
+  color: #022255;
+}
+.fa-check {
+  color: #02b502;
+}
+

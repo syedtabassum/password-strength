@@ -26,22 +26,26 @@
     <title>Form</title>
   </head>
   <body>
-    <div class="contain">
-      <form id="validate">
+    <div class="container">
+      <form id="validate" class="form-horizontal">
+        <fieldset>
         <div class="form-group">
-          <label for="">Email</label>
+          <label class="col-md-12 control-label" for="textinput">Email</label>
+          <div class="col-md-12">
           <input
-            type="text"
-            name="email"
+            type="email"
+            name="textinput"
             id="email"
-            class="form-control"
+            class="form-control input-md"
             placeholder="Enter your Email"
             autocomplete="off"
-            aria-describedby="helpId"
           />
-          <div class="form-group">
-            <label for="">Password</label>
+          </div>
+        </div>
 
+        <div class="form-group">
+            <label class="col-md-12 control-label" for="passwordinput">Password</label>
+            <div class="col-md-12">
             <input
               type="password"
               class="form-control input-md"
@@ -50,51 +54,52 @@
               placeholder="Enter your password"
               autocomplete="off"
             >
-            <span class="show-pass" onclick="toggle()"
-              ><i class="far fa-eye" onclick="myfunction(this)"></i>
+            <span class="show-pass" onclick="toggle()">
+              <i class="far fa-eye" onclick="myfunction(this)"></i>
             </span>
+          </div>
+        </div>
+        <div class="popover-password"><p><span id="result"></span></p>
             <div class="progress">
               <div
                 id="password-strength"
                 class="progress-bar "
-                role="progressbar"
+                role="progressbar" 
                 style="width: 0%"
                 aria-valuenow="40"
                 aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+                aria-valuemax="100">
+              </div>
             </div>
+
             <ul class="list-unstyled">
               <li class="">
                 <span class="low-upper-case"
-                  ><i class="fas fa-circle" aria-hidden="true"></i
-                  >&nbsp;Lowercase &amp; Uppercase</span
-                >
+                  ><i class="fas fa-circle" aria-hidden="true"></i>&nbsp;
+                  Lowercase &amp; Uppercase</span>
               </li>
               <li class="">
                 <span class="one-number"
                   ><i class="fas fa-circle" aria-hidden="true"></i>&nbsp; Number
-                  [0-9]</span
-                >
+                  [0-9]</span>
               </li>
               <li class="">
                 <span class="special-char"
                   ><i class="fas fa-circle" aria-hidden="true"></i>&nbsp;
-                  special-char [@,#,*,&]</span
-                >
+                  special-char [@,#,*,&]</span>
               </li>
               <li class="">
                 <span class="eight-min"
                   ><i class="fas fa-circle" aria-hidden="true"></i>&nbsp;Atleast
-                  8 char</span
-                >
+                  8 char</span>
               </li>
             </ul>
-            <a name="" id="" class="btn btn-primary" href="#" role="button"
-              >CREATE ACCOUNT</a
-            >
+            <a name="" id="" class="btn btn-block" href="#" role="button">CREATE ACCOUNT</a>
+            <div class="ex-account">
+              <p class="text-center">Already have an account? signin <a href="#">here</a></p>
+            </div>
           </div>
-        </div>
+          </fieldset>
       </form>
     </div>
     <script src="./app.js"></script>

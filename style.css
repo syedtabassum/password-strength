@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(0, 212, 212) !important;
+  background-color: #2bd5e9 !important;
 }
 input {
   color: #022255 !important;
@@ -16,34 +16,35 @@ input[type="text"]:focus {
   box-shadow: 0 0 5px rgba(246, 8, 110, 0.8);
   border: 1px solid rgba(246, 8, 110, 0.8);
 }
-.contain {
+.container {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-form {
+.form-horizontal {
   width: 320px;
   background-color: white;
   padding: 20px 30px;
   border-radius: 8px;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
 }
-#password {
-  position: relative;
-}
+
 .show-pass {
   position: absolute;
-  top: 43%;
-  right: 41%;
+  top: 16%;
+  right: 8%;
 }
 label {
   text-align: left !important;
   padding-bottom: 4px;
 }
+.control-label {
+  text-align: left !important;
+  padding-bottom: 4px;
+}
 .progress {
-  margin-top: 10px;
   height: 3px !important;
 }
 .form-group {
@@ -68,4 +69,11 @@ label {
 .fa-check {
   color: #02b502;
 }
-
+.btn {
+  width: 180px !important;
+  background: linear-gradient(to right, #f6086e, #ff133a);
+  font-size: 18px;
+  color: #fff !important;
+  margin: 0 auto 5px;
+  padding: 8px 0;
+}
